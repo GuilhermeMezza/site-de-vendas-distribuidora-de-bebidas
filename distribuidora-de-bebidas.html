@@ -4,109 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <title>DB</title>
+    <script src="https://kit.fontawesome.com/a7860cc281.js" crossorigin="anonymous"></script>
+    <link class="icon" rel="icon" type="image/favicon" href="assets/logo.jpeg">
+    <title>Distrib. de Bebidas</title>
 </head>
 
 <body>
+   
     <header>
-        <nav class="busca">
+
+        <nav id="nav-btn-direita" class="barra-de-pesquisa">
             <input type="search" class="txtbusca" placeholder="O que você está procurando?"/>
-            <button><a href="#">Buscar</a></button>
+            <button class="btnbuscar"><a href="#"><i id="i-botoes-direita-e-lupa" class="fa-solid fa-magnifying-glass"></i></a></button>
         </nav>
-        <nav>
-            <ul>
-                <li class="entre"><a href="#">Entre ou se Cadastre</a></li>
-                <li class="fav"><a href="#">Favoritos</a></li>
+
+        <nav id="nav-btn-direita">
+            <ul class="botoes-da-direita">
+                <div class="icones-botoes-direita"><i id="i-botoes-direita-e-lupa" class="fa-solid fa-user"></i></div><li class="lista-botoes-direita" id="entre"><a href="#">Entre ou se Cadastre</a></li>
+                <div class="icones-botoes-direita"><i id="i-botoes-direita-e-lupa" class="fa-solid fa-heart"></i></div><li class="lista-botoes-direita" id="favoritos"><a href="#">Favoritos</a></li>
             </ul>
-            <ul>
-                <li class="central"><a href="#">Central de Suporte</a></li>
-                <li class="car"><a href="#">Carrinho</a></li>
+            <ul class="botoes-da-direita">
+                <div class="icones-botoes-direita"><i id="i-botoes-direita-e-lupa" class="fa-solid fa-headphones"></i></div><li class="lista-botoes-direita" id="btncentral"><a href="#">Central de Suporte</a></i></li>
+                <div class="icones-botoes-direita"><i id="i-botoes-direita-e-lupa" class="fa-solid fa-cart-shopping"></i></div><li class="lista-botoes-direita" id="carrinho"><a href="#">Carrinho</a></i></li>
             </ul>
         </nav>
         <img class="logo" src="assets\logo.jpeg">
         <hr>
         
     </header>
-        <ul class="menu2">
-            <li class="lista2"><a href="#">Drinks</a></li>
-            <li class="lista2"><a href="#">Cervejas</a></li>
-            <li class="lista2"><a href="#">Vinhos</a></li>
-            <li class="lista2"><a href="#">Gins</a></li>
-            <li class="lista2"><a href="#">Vodkas</a></li>
-            <li class="lista2"><a href="#">Espumantes</a></li>
-            <li class="lista2"><a href="#">Whisky</a></li>
-            <li class="lista2"><a href="#">Refrigerantes</a></li>
-            <li class="lista2"><a href="#">kits</a></li>
+    
+        <ul class="menu-de-bebidas">
+            <li class="lista-menu-bebidas"><a href="#">Cervejas</a></li><div class="icones-lista-menu-bebidas"><i class="fa-solid fa-angle-up fa-rotate-180"></i></div>
+            <li class="lista-menu-bebidas"><a href="#">Vinhos</a></li><div class="icones-lista-menu-bebidas"><i class="fa-solid fa-angle-up fa-rotate-180"></i></div>
+            <li class="lista-menu-bebidas"><a href="#">Espumantes</a></li><div class="icones-lista-menu-bebidas"><i class="fa-solid fa-angle-up fa-rotate-180"></i></div>
+            <li class="lista-menu-bebidas"><a href="#">Refrigerantes</a></li><div class="icones-lista-menu-bebidas"><i class="fa-solid fa-angle-up fa-rotate-180"></i></div>
         </ul>
-
-        <h1>Mais visitados</h1>
+    
+        <h1>Mais vendidos</h1>
 
     <main>
-        <div class="cards">
-            <div class="card1">
-                <img src="assets/jack.jpg" style="width: 300px; height: 300px;">
-                <h3>Whisky Jack Daniel`s 1000ml</h3>
-                <p class="price">R$ 123.55</p>
-                <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+        <div class="cartoes">
+            <div>
+                <img src="assets/CAIXAHEINEKEN.webp" style="width: 300px; height: 300px;">
+                <h3>Pack Long Neck 12u 330ml</h3>
+                <p class="preco">R$ 123.55</p>
+                <p>No pix, crédito, débito ou boleto</p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
-                <img src="assets/heineken.png" style="width: 300px; height: 300px;">
-                <h3>Pack Heineken 12u. 350ml lata</h3>
-                <p class="price">R$ 60.00</p>
-                <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+            <div>
+                <img src="assets/merlot.webp" style="width: 300px; height: 300px;">
+                <h3>Vinho Tinto Faces Merlot 750ml</h3>
+                <p class="preco">R$ 54.90</p>
+                <p>No pix, crédito, débito ou boleto</p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
+            <div>
                 <img src="assets/refri.jpg" style="width: 300px; height: 300px;">
                 <h3>Refrigerante Pepsi 2L</h3>
-                <p class="price">R$ 10.00</p>
-                <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+                <p class="preco">R$ 10.00</p>
+                <p>No pix, crédito, débito ou boleto</p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
-                <img src="assets/packvinhos.webp" style="width: 300px; height: 300px;">
-                <h3>Kit 3u. sem álcool</h3>
-                <p class="price">R$ 113.55</p>
-                <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+            <div>
+                <img src="assets/lidio.webp" style="width: 300px; height: 300px;">
+                <h3>Espumante Lidio Carraro 750ml</h3>
+                <p class="preco">R$ 96.90</p>
+                <p>No pix, crédito, débito ou boleto</p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
         </div>
     </main>
 
-    <h1>Mais vendidos</h1>
+    <h1>Promoções</h1>
 
     <main>
-        <div class="cards">
-            <div class="card1">
+        <div class="cartoes">
+            <div>
                 <img src="assets/gin.jpg" style="width: 300px; height: 300px;">
                 <h3>Gin Tanqueray London Dry 750ml</h3>
-                <p class="price">R$ 115.75</p>
+                <p class="preco">R$ 115.75</p>
                 <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
+            <div>
                 <img src="assets/vodka.webp" style="width: 300px; height: 300px;">
                 <h3>Vodka Cîroc 700ml</h3>
-                <p class="price">R$ 179.27</p>
+                <p class="preco">R$ 179.27</p>
                 <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
+            <div>
                 <img src="assets/espumante.png" style="width: 300px; height: 300px;">
                 <h3>Espumante 750ml</h3>
-                <p class="price">R$ 109.90</p>
+                <p class="preco">R$ 109.90</p>
                 <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
-            <div class="card1">
+            <div>
                 <img src="assets/drink.jpg" style="width: 300px; height: 300px;">
                 <h3>Drink Sex On The Beach 300ml</h3>
-                <p class="price">R$ 20.00</p>
+                <p class="preco">R$ 20.00</p>
                 <p>No pix, crédito ou boleto</p>
-                <p><button class="btncard">Adicionar ao carrinho</button></p>
+                <p><button class="btncartao">Adicionar ao carrinho</button></p>
             </div>
         </div>
     </main>
+
+    <h1>Localização</h1>  
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7920918333084!2d-43.22865022469303!3d-22.88413743706203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ec46c7a3651%3A0xa3e8a1efdee38ffb!2sR.%20Peter%20Lund%2C%20145%20-%20Caju%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020930-390!5e0!3m2!1spt-BR!2sbr!4v1693683443310!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </body>
+
+<footer>
+        
+    <div class="duvidas">
+        <h4>DÚVIDAS</h4>
+        <ul class="lista-do-rodape">
+            <li class="itens-lista-do-rodape">Formas de pagamento</li>
+            <li class="itens-lista-do-rodape">Serviços de entrega</li>
+            <li class="itens-lista-do-rodape">Garantia</li>
+            <li class="itens-lista-do-rodape">Política de privacidade</li>
+            <li class="itens-lista-do-rodape">Declaração de privacidade</li>
+            <li class="itens-lista-do-rodape">Termos e condições</li>
+        </ul>
+    </div>
+
+    <div class="empresa">
+        <h4>EMPRESA</h4>
+        <ul class="lista-do-rodape">
+            <li class="itens-lista-do-rodape">Sobre a empresa</li>
+            <li class="itens-lista-do-rodape">Guia Antiressaca</li>
+        </ul>
+    </div>
+
+    <div class="atendimento">
+        <h4>ATENDIMENTO</h4>
+        <ul class="lista-do-rodape">
+            <li class="itens-lista-do-rodape">faleconosco@drinkdellas.com.br</li>
+            <li class="itens-lista-do-rodape">Fale conosco</li>
+            <li class="itens-lista-do-rodape">Ouvidoria</li>
+            <li class="item-atendimento">De segunda a sexta das 8h às 17h.</li>
+            <li class="item-atendimento">Sábado das 8h às 13h</li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>REDES SOCIAIS</h4>
+        <ul>
+            <li class="icones-rodape"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"></li>
+            <li  class="icones-rodape"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white "></li>
+            <li class="icones-rodape"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>APLICATIVO</h4>
+        <ul>
+            <li class="icones-rodape"><img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white "></li>
+            <li class="icones-rodape"><img src="https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=app-store&logoColor=white"></li>
+        </ul>
+    </div>
+
+</footer>
+
 </html>
